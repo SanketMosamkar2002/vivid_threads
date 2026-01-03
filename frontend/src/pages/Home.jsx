@@ -91,13 +91,13 @@ const Home = () => {
       <div className="carouselContainer">
         <div className="carouselSubContainer">
           <Slider {...settings}>
-          {images.map((image, i) => {
-            return (
-              <div className="carouselImgDiv" key={i}>
-                <img src={image} alt="index" />
-              </div>
-            );
-          })}
+            {images.map((image, i) => {
+              return (
+                <div className="carouselImgDiv" key={i}>
+                  <img src={image} alt="index" />
+                </div>
+              );
+            })}
           </Slider>
           {/* <div className="exploreCollection">
             <button className="visitBtn">Explore Collection</button>

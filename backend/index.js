@@ -26,6 +26,10 @@ const port = process.env.PORT || 4002;
 app.use("/api/v4", products);
 app.use("/api/v4", user);
 
+app.get("/", (req, res) => {
+  res.json({ "msg": "API is running...." });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on PORT ${port}`);
 });
